@@ -17,3 +17,5 @@ Route::any('/', function () {
     dump(Calculator::division(1, 2));
     dump(Calculator::division(1, 0));
 });
+Route::get('/', 'CalculatorController@index');
+Route::post('/', 'CalculatorController@calculate')->name('calculate');
