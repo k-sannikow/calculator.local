@@ -179,6 +179,7 @@ return [
          * Own Service Providers...
          */
         App\Providers\CalculatorServiceProvider::class,
+        App\Providers\ValidationServiceProvider::class,
     ],
 
     /*

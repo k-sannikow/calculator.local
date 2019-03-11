@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Calculator;
-use Illuminate\Http\Request;
+use Illuminate\Http\CalculatorRequest;
 
 class CalculatorController extends Controller
 {
@@ -20,11 +20,11 @@ class CalculatorController extends Controller
     /**
      * Обработка данных
      *
-     * @param Request $request экземпляр текущего HTTP-запроса
+     * @param CalculatorRequest $request экземпляр текущего HTTP-запроса
      *
      * @return Viev представление
      */
-    public function calculate(Request $request)
+    public function calculate(CalculatorRequest $request)
     {
         $number1 = $request->number1;
         $number2 = $request->number2;
