@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Calculator;
-use Illuminate\Http\CalculatorRequest;
+use App\Http\Requests\CalculatorRequest;
 
 class CalculatorController extends Controller
 {
@@ -33,8 +33,8 @@ class CalculatorController extends Controller
             case 'addition':
                 $result = Calculator::addition($number1, $number2);
                 break;
-            case 'substraction':
-                $result = Calculator::substraction($number1, $number2);
+            case 'subtraction':
+                $result = Calculator::subtraction($number1, $number2);
                 break;
             case 'multiplication':
                 $result = Calculator::multiplication($number1, $number2);
@@ -43,7 +43,7 @@ class CalculatorController extends Controller
                 $result = Calculator::division($number1, $number2);
                 break;
             default:
-                $result - null;
+                $result = null;
                 break;
         }
 
