@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use Calculator;
 use App\Http\Requests\CalculatorRequest;
 
+/**
+ * Контроллер класса Калькулятор.
+ */
 class CalculatorController extends Controller
 {
     /**
